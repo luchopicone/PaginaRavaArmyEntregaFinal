@@ -1,0 +1,98 @@
+@media (max-width: 1100px){
+    .ContenedorProductos{
+        width: 85%;
+    }
+}
+@media (max-width: 1200px){
+    .ContenedorProductos{
+        width: 65%;
+    }
+}
+@media(max-width: 768px){
+    .ContenedorProductos{
+        width: 55%;
+    }
+}
+
+@media (max-width: 952px){
+    .ContenedorContenedores{
+        flex-direction: column;
+    }
+    .ContenedorProductos{
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px){
+    .ContenedorContenedores{
+        flex-direction: column;
+    }
+    .ContenedorProductos{
+        width: 100%;
+    }
+    
+}
+@media (min-width: 768px) {
+    .ContenedorContenedoresContactanos{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+@media (max-width:767px) {
+    Main .MainContactanos{
+        padding: 0px;
+    }
+    .ContenidoContactanos{
+        padding: 20px;
+    }
+    .ContenedorContenedoresContactanos{
+        padding:0px
+    }
+}
+
+@media (max-width:1179px) {
+    .InformacionContacto{
+        padding: 2rem;
+    }
+    .FormularioContacto{
+        background-color: #222222;
+        padding: .1rem;
+    }
+}
+
+@media (max-width:1160px){
+    .InformacionContacto{
+        padding: 2rem;
+    }
+    .FormularioContacto{
+        background-color: #222222;
+        padding: .8rem;
+    }
+}
+
+@media (max-width:510px) {
+    Main .MainContactanos{
+        padding: 0px;
+    }
+    .ContenidoContactanos{
+        padding: 0px;
+    }
+    .ContenedorContenedoresContactanos{
+        padding:0px
+    }
+}
+
+@media (max-width:370px) {
+    .VideoNosotros{
+        height: 20rem;
+    }
+}
+
+@media (max-width:472px) {
+    .FooterMenuContainer{
+        flex-direction: column;
+    }
+    .MenuItem{
+        font-size: 20px;
+    }
+}

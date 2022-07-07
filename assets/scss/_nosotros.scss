@@ -1,0 +1,28 @@
+.BodyNosotros{
+    background-image: url(../img/BackgroundContactanos.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;
+    .ContenedorNosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            margin: 20px;
+            font-size: 40px;
+            color: white;
+        }
+        p{
+            padding: .8rem;
+            margin: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        iframe {
+            margin: 20px 0px;
+        }
+        .QuienesSomos{
+            padding-top: 2.5rem;
+        }
+    }
+    }

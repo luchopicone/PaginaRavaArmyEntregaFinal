@@ -1,0 +1,16 @@
+.BodyUbicacion{
+    background-image: url(../img/BackgroundContactanos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .MainUbicacion{
+        .TituloUbicacion{
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 1rem;
+            padding-bottom: 2.5rem;
+        }
+        .TextoAbajoMapa{
+            color: white;
+        }
+    }
+}

@@ -1,442 +1,392 @@
-/*----------RESET----------*/
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-/*--------------PRODUCTOSINDEX-------------*/
+.ContenedorContenedores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.ContenedorContenedores{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ContenedorProductos {
+  background-color: rgb(24, 23, 23);
+  box-shadow: 0 0 8px #111;
+  margin: 35px;
+  width: 25%;
 }
-.ContenedorProductos{
-    background-color: rgb(24, 23, 23);
-    box-shadow: 0 0 8px #111;
-    margin:35px;
-    width: 25%;
+.ContenedorProductos .Card {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 100px;
 }
-.ContenedorProductos .Card{
-    height:200px;
-    width: 100%;
-    margin-bottom: 100px;
+.ContenedorProductos img {
+  margin: auto;
+  display: block;
 }
-.ContenedorProductos img{
-    margin: auto;
-    display: block;
+.ContenedorProductos .Remera1 {
+  background-color: rgba(169, 31, 187, 0.7607843137);
 }
-.Remera1 img{
-    height: 350px;
-    width: 95%;
+.ContenedorProductos .Remera1 img {
+  height: 350px;
+  width: 95%;
 }
-.Short1 img{
-    height: 340px;
-    width: 95%;
+.ContenedorProductos .Short1 {
+  background-color: rgba(169, 31, 187, 0.7607843137);
 }
-.Remera2 img{
-    height: 350px;
-    width: 95%;
+.ContenedorProductos .Short1 img {
+  height: 340px;
+  width: 95%;
 }
-.ContenedorProductos .Remera1{
-    background-color: #a91fbbc2;
+.ContenedorProductos .Remera2 {
+  background-color: rgba(169, 31, 187, 0.7607843137);
 }
-.ContenedorProductos .Short1{
-    background-color: #a91fbbc2;
+.ContenedorProductos .Remera2 img {
+  height: 350px;
+  width: 95%;
 }
-.ContenedorProductos .Remera2{
-    background-color: #a91fbbc2;
+.ContenedorProductos .Informacion {
+  height: 160px;
+  width: 100%;
 }
-.Informacion{
-    height: 160px;
-    width: 100%;
+.ContenedorProductos .Informacion h1 {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 18px;
 }
-.Informacion h1{
-    font-family: sans-serif;
-    font-size: 1.4em;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 18px;
+.ContenedorProductos .Informacion p {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  color: rgb(216, 216, 216);
 }
-.Informacion p{
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 0.9em;
-    color: rgb(216, 216, 216);
+.ContenedorProductos .Informacion .precio {
+  height: 50px;
+  width: 85%;
+  margin: auto;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.precio{
-    height: 50px;
+.ContenedorProductos .BoxPrecio {
+  width: 80px;
+}
+.ContenedorProductos .BoxPrecio .Precio1 {
+  margin: 12px;
+  color: red;
+  font-size: 0.8em;
+}
+.ContenedorProductos .BoxPrecio .Precio2 {
+  font-size: 1.5em;
+  margin: 12px;
+  color: rgb(202, 202, 202);
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  padding: 2rem 8%;
+  background-color: rgb(168, 101, 163);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+footer .ContenedorIconosRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+footer .ContenedorIconosRedes .IconoRedSocial {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  background-image: url(../img/logotwitter.png);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+footer .ContenedorIconosRedes .IconoRedSocial:hover {
+  background-color: #121212;
+  filter: invert(1);
+  transition: 0.5s;
+}
+footer .ContenedorIconosRedes .IconoRedSocial:nth-of-type(2) {
+  background-image: url(../img/logoinstagram.png);
+}
+footer .ContenedorIconosRedes .IconoRedSocial:nth-of-type(3) {
+  background-image: url(../img/logolinktree.png);
+}
+footer .ContenedorIconosRedes .IconoRedSocial:nth-of-type(4) {
+  background-image: url(../img/logowppblanco.png);
+}
+footer .FooterMenuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  color: #f2f2f2;
+  font-size: 18px;
+}
+footer .FooterMenuContainer .MenuItem {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+footer .FooterMenuContainer .MenuItem:hover {
+  opacity: 1;
+}
+footer .FooterMenuContainer a {
+  list-style: none;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+footer .Copyright {
+  color: #f2f2f2;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.BodyUbicacion {
+  background-image: url(../img/BackgroundContactanos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.BodyUbicacion .MainUbicacion .TituloUbicacion {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+.BodyUbicacion .MainUbicacion .TextoAbajoMapa {
+  color: white;
+}
+
+.BodyContactanos {
+  background-image: url(../img/BackgroundContactanos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.BodyContactanos .MainContactanos {
+  color: #FFF;
+  font-family: "Quicksand", sans-serif;
+  margin: 5em 0;
+}
+.BodyContactanos .MainContactanos .TextoContactanos {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 3em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos {
+  padding: 0.6em;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto {
+  background-color: #222222;
+  padding: 0.3rem;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form .Bloque1 {
+  grid-column: 1/3;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form p {
+  margin: 0;
+  padding: 1em;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button, .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form input, .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgb(168, 101, 163);
+  outline: none;
+  color: #FFF;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button {
+  background-color: rgb(168, 101, 163);
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: rgb(44, 44, 44);
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button:hover, .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button:focus {
+  background: rgb(202, 125, 197);
+  color: #FFF;
+  transition: background-color 0.5s ease-out;
+  outline: 0;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto textarea {
+  resize: none;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto h3 {
+  margin: 1.2rem;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto {
+  background-color: #000;
+  padding: 2.2rem;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto h4 {
+  padding: 3rem 0rem;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto h4, .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul, .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul li {
+  padding: 0.3rem 0rem;
+}
+
+.BodyNosotros {
+  background-image: url(../img/BackgroundContactanos.jpg);
+  background-size: 100vw;
+  background-attachment: fixed;
+}
+.BodyNosotros .ContenedorNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.BodyNosotros .ContenedorNosotros h2 {
+  margin: 20px;
+  font-size: 40px;
+  color: white;
+}
+.BodyNosotros .ContenedorNosotros p {
+  padding: 0.8rem;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+}
+.BodyNosotros .ContenedorNosotros iframe {
+  margin: 20px 0px;
+}
+.BodyNosotros .ContenedorNosotros .QuienesSomos {
+  padding-top: 2.5rem;
+}
+
+@media (max-width: 1100px) {
+  .ContenedorProductos {
     width: 85%;
-    margin: auto;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
 }
-.BoxPrecio{
-    width: 80px;
+@media (max-width: 1200px) {
+  .ContenedorProductos {
+    width: 65%;
+  }
 }
-.Precio1{
-    margin: 12px;
-    color: red;
-    font-size: 0.8em;
+@media (max-width: 768px) {
+  .ContenedorProductos {
+    width: 55%;
+  }
 }
-.Precio2{
-    font-size: 1.5em;
-    margin: 12px;
-    color: rgb(202, 202, 202);
-}
-@media (max-width: 1100px){
-    .ContenedorProductos{
-        width: 85%;
-    }
-}
-@media (max-width: 1200px){
-    .ContenedorProductos{
-        width: 65%;
-    }
-}
-
-
-/*------------------FOOTER--------------------*/
-footer{
-    background-color: rgb(168, 101, 163);
-    color: white;
-    grid-area: footer;
-}
-.ContenedorCopyright{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-.Copyright{
-    font-size: 12px;
-    opacity: 0.7;
-    font-weight: 400;
-    padding: 10px 0;
-}
-
-.FooterContainer{
-    margin-top: 35px;
-    width: 100%;
-    padding: 2rem 3rem;
-    padding-top: 3rem;
-    display: flex;
-    justify-content: space-around;
-}
-.FooterContainerContenido{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+@media (max-width: 952px) {
+  .ContenedorContenedores {
     flex-direction: column;
-    margin: 0px 65px;
+  }
+
+  .ContenedorProductos {
+    width: 95%;
+  }
 }
-footer .LogoPagina{
-    margin: 1.2rem;
-    font-size:39px;
-}
-.FooterInfo, .MenuItemFooter{
-    margin: 0.2rem;
-    opacity: 0.7;
-    color: white;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.MenuItemFooter:hover{
-    opacity: 1;
-}
-.TituloMenu{
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 1.2rem;
-}
-.ContenedorRedesSociales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 500px) {
+  .ContenedorContenedores {
+    flex-direction: column;
+  }
+
+  .ContenedorProductos {
     width: 100%;
+  }
 }
-.SocialLink{
-    height: 100%;
-    width: 30px;
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.SocialLink:hover{
-    opacity: 0.7;
-}
-.FooterMenu{
-    display: flex;
-}
-
-@media(max-width: 768px){
-    /*--------FOOTER-------*/
-    .ContenedorProductos{
-        width: 55%;
-    }
-    .FooterContainer{
-        flex-direction: column;
-        align-items: center;
-        font-size: 20px;
-    }
-    .FooterContainerContenido{
-        margin: 25px 0px
-    }
-    .FooterMenu{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
-@media (max-width: 950px) {
-    .FooterContainerContenido{
-        margin: 15px;
-    }
-}
-
-@media (max-width: 952px){
-    .ContenedorContenedores{
-        flex-direction: column;
-    }
-    .ContenedorProductos{
-        width: 95%;
-    }
-}
-
-@media (max-width: 500px){
-    .ContenedorContenedores{
-        flex-direction: column;
-    }
-    .ContenedorProductos{
-        width: 100%;
-    }
-    
-}
-
-/*----------UBICACION------------*/
-.BodyUbicacion{
-    background-image: url(../img/BackgroundContactanos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.TituloUbicacion{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 1rem;
-    padding-bottom: 2.5rem;
-}
-
-.TextoAbajoMapa{
-    color: white;
-}
-
-/*-----------------CONTACTANOS---------------- */
-.BodyContactanos{
-    background-image: url(../img/BackgroundContactanos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.TextoContactanos{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-textarea{
-    resize: none;
-}
-
-.MainContactanos{
-    color:#FFF;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0 1.5em;
-    margin: 5em 0;
-}
-
-.ContenidoContactanos{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-}
-
-.TextoContactanos{
-    text-align: center;
-    font-size: 3em;
-    margin: 0 0 1em 0;
-    text-transform: uppercase;
-}
-
-.ContenedorContenedoresContactanos{
-    padding: 1.3em;
-}
-
-.FormularioContacto{
-    background-color: #222222;
-    padding: .3rem;
-}
-
-.FormularioContacto form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.FormularioContacto form .Bloque1{
-    grid-column: 1 / 3;
-}
-
-.FormularioContacto form p{
-    margin: 0;
-    padding: 1em;
-}
-
-.FormularioContacto h3{
-    margin: 1.2rem;
-}
-
-.InformacionContacto h4{
-    padding: 3rem;
-}
-
-.FormularioContacto form button,
-.FormularioContacto form input,
-.FormularioContacto form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    border-bottom: 1px solid rgb(168, 101, 163);
-    outline: none;
-    color: #FFF;
-}
-
-.FormularioContacto form button{
-    background-color: rgb(168, 101, 163);
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-    color: rgb(44, 44, 44);
-}
-
-.FormularioContacto form button:hover,
-.FormularioContacto form button:focus{
-    background: rgb(202, 125, 197);
-    color: #FFF;
-    transition: background-color 0.5s ease-out;
-    outline: 0;
-}
-
-.InformacionContacto{
-    background-color: #000;
-    padding: 2.2rem;
-}
-
-.InformacionContacto h4,
-.InformacionContacto ul,
-.InformacionContacto p{
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-.InformacionContacto ul li{
-    padding: .3em;
-}
-
 @media (min-width: 768px) {
-    .ContenedorContenedoresContactanos{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+  .ContenedorContenedoresContactanos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
 }
+@media (max-width: 767px) {
+  Main .MainContactanos {
+    padding: 0px;
+  }
 
-@media (max-width:767px) {
-    Main .MainContactanos{
-        padding: 0px;
-    }
-    .ContenidoContactanos{
-        padding: 20px;
-    }
-    .ContenedorContenedoresContactanos{
-        padding:0px
-    }
+  .ContenidoContactanos {
+    padding: 20px;
+  }
+
+  .ContenedorContenedoresContactanos {
+    padding: 0px;
+  }
 }
+@media (max-width: 1179px) {
+  .InformacionContacto {
+    padding: 2rem;
+  }
 
-@media (max-width:1179px) {
-    .InformacionContacto{
-        padding: 2rem;
-    }
-    .FormularioContacto{
-        background-color: #222222;
-        padding: .1rem;
-    }
+  .FormularioContacto {
+    background-color: #222222;
+    padding: 0.1rem;
+  }
 }
+@media (max-width: 1160px) {
+  .InformacionContacto {
+    padding: 2rem;
+  }
 
-@media (max-width:1160px){
-    .InformacionContacto{
-        padding: 2rem;
-    }
-    .FormularioContacto{
-        background-color: #222222;
-        padding: .8rem;
-    }
+  .FormularioContacto {
+    background-color: #222222;
+    padding: 0.8rem;
+  }
 }
+@media (max-width: 510px) {
+  Main .MainContactanos {
+    padding: 0px;
+  }
 
-@media (max-width:510px) {
-    Main .MainContactanos{
-        padding: 0px;
-    }
-    .ContenidoContactanos{
-        padding: 0px;
-    }
-    .ContenedorContenedoresContactanos{
-        padding:0px
-    }
+  .ContenidoContactanos {
+    padding: 0px;
+  }
+
+  .ContenedorContenedoresContactanos {
+    padding: 0px;
+  }
 }
-
-/*-------------NOSOTROS-------------*/
-.ContenedorNosotros{
-    display: flex;
+@media (max-width: 370px) {
+  .VideoNosotros {
+    height: 20rem;
+  }
+}
+@media (max-width: 472px) {
+  .FooterMenuContainer {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.ContenedorNosotros h2 {
-    margin: 20px;
-    font-size: 40px;
-    color: white;
-}
-.ContenedorNosotros p{
-    margin: 10px;
+  }
+
+  .MenuItem {
     font-size: 20px;
-    color: white;
-}
-.ContenedorNosotros iframe {
-    margin: 20px;
-}
-.BodyNosotros{
-background-image: url(../img/BackgroundContactanos.jpg);
-background-size: 100vw;
-background-attachment: fixed;
-}
-
-.QuienesSomos{
-    padding-top: 2.5rem;
-}
-
-.ContenedorNosotros p{
-    padding: .8rem;
-}
-
-@media (max-width:370px) {
-    .VideoNosotros{
-        height: 20rem;
-    }
-}
-
+  }
+}/*# sourceMappingURL=style.css.map */

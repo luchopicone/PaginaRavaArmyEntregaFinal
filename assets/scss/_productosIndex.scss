@@ -1,0 +1,80 @@
+.ContenedorContenedores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContenedorProductos{
+    background-color: rgb(24, 23, 23);
+    box-shadow: 0 0 8px #111;
+    margin:35px;
+    width: 25%;
+    .Card{
+        height:200px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    img{
+        margin: auto;
+        display: block;
+    }
+    .Remera1{
+        background-color: $ColorProductos;
+        img{
+            height: 350px;
+            width: 95%;
+        }
+    }
+    .Short1{
+        background-color: $ColorProductos;
+        img{
+            height: 340px;
+            width: 95%;
+        }
+    }
+    .Remera2{
+        background-color: $ColorProductos;
+        img{
+            height: 350px;
+            width: 95%;
+        }
+    }
+    .Informacion{
+        height: 160px;
+        width: 100%;
+        h1{
+            font-family: sans-serif;
+            font-size: 1.4em;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 18px;
+        }
+        p{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 0.9em;
+            color: rgb(216, 216, 216);
+        }
+        .precio{
+            height: 50px;
+            width: 85%;
+            margin: auto;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .BoxPrecio{
+        width: 80px;
+        .Precio1{
+            margin: 12px;
+            color: red;
+            font-size: 0.8em;
+        }
+        .Precio2{
+            font-size: 1.5em;
+            margin: 12px;
+            color: rgb(202, 202, 202);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+footer{
+    width: 100%;
+    position: absolute;
+    padding: 2rem 8%;
+    background-color: $ColorPrimario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .logo{
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+    .ContenedorIconosRedes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        .IconoRedSocial{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            border: 1px solid $BlancoLetras;
+            background-image: url(../img/logotwitter.png);
+            background-position: center;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            margin: 1rem;
+            &:hover{
+                background-color: #121212;
+                filter: invert(1);
+                transition: .5s;
+            }
+            &:nth-of-type(2){
+                background-image: url(../img/logoinstagram.png);
+            }
+            &:nth-of-type(3){
+                background-image: url(../img/logolinktree.png);
+            }
+            &:nth-of-type(4){
+                background-image: url(../img/logowppblanco.png);
+            }
+        }
+    }
+    .FooterMenuContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        list-style-type: none;
+        color: $BlancoLetras;
+        font-size: 18px;
+        .MenuItem{
+            margin: 1rem 1.5rem;
+            cursor: pointer;
+            opacity: 0.8;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: $BlancoLetras;
+        }
+    }
+    .Copyright{
+        color: $BlancoLetras;
+        opacity: 0.5;
+        text-align: center;
+    }    
+}
