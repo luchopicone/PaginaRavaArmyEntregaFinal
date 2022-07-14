@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+.btn-primario {
+  background-color: rgb(168, 101, 163);
+}
+
+.btn-secundario {
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-terciario {
+  background-color: rgba(169, 31, 187, 0.7607843137);
+}
+
 .ContenedorContenedores {
   display: flex;
   justify-content: center;
@@ -86,6 +98,20 @@
   font-size: 1.5em;
   margin: 12px;
   color: rgb(202, 202, 202);
+}
+.ContenedorProductos .btn, .ContenedorProductos .btn-primario, .ContenedorProductos .btn-secundario, .ContenedorProductos .btn-terciario {
+  padding: 0.4rem 0.6rem;
+  border: 0;
+  border-radius: 50px;
+  margin: 0.7rem;
+  width: 90 px;
+  height: auto;
+  color: rgb(5, 3, 3);
+}
+.ContenedorProductos .btn:hover, .ContenedorProductos .btn-primario:hover, .ContenedorProductos .btn-secundario:hover, .ContenedorProductos .btn-terciario:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 footer {
@@ -310,7 +336,6 @@ footer .Copyright {
   .ContenedorContenedores {
     flex-direction: column;
   }
-
   .ContenedorProductos {
     width: 95%;
   }
@@ -319,7 +344,6 @@ footer .Copyright {
   .ContenedorContenedores {
     flex-direction: column;
   }
-
   .ContenedorProductos {
     width: 100%;
   }
@@ -334,11 +358,9 @@ footer .Copyright {
   Main .MainContactanos {
     padding: 0px;
   }
-
   .ContenidoContactanos {
     padding: 20px;
   }
-
   .ContenedorContenedoresContactanos {
     padding: 0px;
   }
@@ -347,7 +369,6 @@ footer .Copyright {
   .InformacionContacto {
     padding: 2rem;
   }
-
   .FormularioContacto {
     background-color: #222222;
     padding: 0.1rem;
@@ -357,7 +378,6 @@ footer .Copyright {
   .InformacionContacto {
     padding: 2rem;
   }
-
   .FormularioContacto {
     background-color: #222222;
     padding: 0.8rem;
@@ -367,11 +387,9 @@ footer .Copyright {
   Main .MainContactanos {
     padding: 0px;
   }
-
   .ContenidoContactanos {
     padding: 0px;
   }
-
   .ContenedorContenedoresContactanos {
     padding: 0px;
   }
@@ -385,7 +403,6 @@ footer .Copyright {
   .FooterMenuContainer {
     flex-direction: column;
   }
-
   .MenuItem {
     font-size: 20px;
   }

@@ -1,3 +1,35 @@
 $ColorPrimario: rgb(168, 101, 163);
 $ColorProductos: #a91fbbc2;
-$BlancoLetras: #f2f2f2
+$BlancoLetras: #f2f2f2;
+$colores:(
+    primario:rgb(168, 101, 163),
+    secundario:rgb(255, 255, 255),
+    terciario:#a91fbbc2
+);
+
+$btn:(
+    padding: .4rem .6rem,
+    bordes: 0,
+    radio: 50px,
+    margin: .7rem,
+);
+
+@each $clave , $var in $colores {
+    .btn-#{$clave}{
+        @extend .btn;
+        background-color: $var;
+    }
+}
+
+@mixin propiedades ($ancho, $alto, $colorLetra) {
+    width:$ancho;
+    height:$alto;
+    color:$colorLetra;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
