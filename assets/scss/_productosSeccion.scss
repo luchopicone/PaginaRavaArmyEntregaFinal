@@ -1,0 +1,70 @@
+.BodyProductos{
+    background: #f5f5f5;
+}
+.ContenedorProductoGrande{
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    justify-content: space-between;
+    .RemeraProductosTarjetaGrande{
+        width:auto;
+        padding: 0;
+        margin-right:3.5rem;
+    }
+    .ContenedorTextoProductoGrande{
+        flex-basis: 40%;
+        position: relative;
+        margin-left: 90px;
+        h2{
+            font-size: 54px;
+        }
+        h3{
+            font-size: 30px;
+            color: #707070;
+            font-weight: 100;
+            margin: 20px 0 10px;
+        }
+        p{
+            font-size: 16px;
+            color: #b7b7b7;
+            font-weight: 100;
+        }
+        h4{
+            margin: 30px 0;
+            font-size: 20px;
+        }
+        .BotonCompraYaProductos{
+            width: 165px;
+            border: 0;
+            padding: 12px 10px;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: linear-gradient(to right, #ff36c6, #f48210 );
+            border-radius: 6px;
+            cursor: pointer;
+            transition: width .5s;
+            img{
+                width: 30px;
+                display: none;
+            }
+            &:hover{
+                width:200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &:hover img{
+                display: block;
+            }
+            &::after{
+                content: '';
+                width: 10px;
+                height: 63%;
+                background: linear-gradient(to right, #ff36c6, #f48210 );
+                position: absolute;
+                left: -40px;
+                top: 8px;
+            }
+        }
+    }
+}

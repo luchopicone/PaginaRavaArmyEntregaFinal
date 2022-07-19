@@ -1,52 +1,27 @@
-@media (max-width: 1100px){
-    .ContenedorProductos{
-        width: 85%;
+@media (max-width:1450px) {
+    .banner_img{
+        img{
+            padding-right:300px;
+
+        }
     }
 }
+
 @media (max-width: 1200px){
     .ContenedorProductos{
         width: 65%;
+    }.banner_img{
+        img{
+            margin-right: -1000px;
+        }
     }
-}
-@media(max-width: 768px){
-    .ContenedorProductos{
-        width: 55%;
+    .banner_title{
+        h2{
+            margin-left: 30px;
+        }
     }
-}
-
-@media (max-width: 952px){
-    .ContenedorContenedores{
-        flex-direction: column;
-    }
-    .ContenedorProductos{
-        width: 95%;
-    }
-}
-
-@media (max-width: 500px){
-    .ContenedorContenedores{
-        flex-direction: column;
-    }
-    .ContenedorProductos{
-        width: 100%;
-    }
-    
-}
-@media (min-width: 768px) {
-    .ContenedorContenedoresContactanos{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-}
-@media (max-width:767px) {
-    Main .MainContactanos{
-        padding: 0px;
-    }
-    .ContenidoContactanos{
-        padding: 20px;
-    }
-    .ContenedorContenedoresContactanos{
-        padding:0px
+    .BotonConocenos{
+        margin-left: 30px;
     }
 }
 
@@ -70,6 +45,82 @@
     }
 }
 
+@media (max-width: 1100px){
+    .ContenedorProductos{
+        width: 85%;
+    }
+}
+
+@media (max-width: 952px){
+    .ContenedorContenedores{
+        flex-direction: column;
+    }
+    .ContenedorProductos{
+        width: 70%;
+    }
+    .ContenedorTextoProductoGrande{
+        margin: 50px;
+    }
+}
+
+@media (max-width:920px) {
+    .ContenedorProductoGrande{
+        display: flex;
+    }
+    .RemeraProductosTarjetaGrande{
+        height: 400px;
+    }
+}
+
+@media (max-width:875px) {
+    .RemeraProductosTarjetaGrande{
+        height: 370px;
+    }
+}
+
+@media (max-width:800px) {
+    .RemeraProductosTarjetaGrande{
+        height: 320px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ContenedorContenedoresContactanos{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width:767px) {
+    Main .MainContactanos{
+        padding: 0px;
+    }
+    .ContenidoContactanos{
+        padding: 20px;
+    }
+    .ContenedorContenedoresContactanos{
+        padding:0px
+    }
+}
+
+@media (max-width:732px) {
+    .RemeraProductosTarjetaGrande{
+        display: none;
+    }
+    .ContenedorTextoProductoGrande{
+        display: none;
+    }
+    .ContenedorProductoGrande{
+        display: none;
+    }
+}
+
+@media (max-width:630px) {
+    .QuienesSomos{
+        margin-left: 3rem;
+    }
+}
+
 @media (max-width:510px) {
     Main .MainContactanos{
         padding: 0px;
@@ -82,10 +133,14 @@
     }
 }
 
-@media (max-width:370px) {
-    .VideoNosotros{
-        height: 20rem;
+@media (max-width: 500px){
+    .ContenedorContenedores{
+        flex-direction: column;
     }
+    .ContenedorProductos{
+        width: 100%;
+    }
+    
 }
 
 @media (max-width:472px) {
@@ -94,5 +149,15 @@
     }
     .MenuItem{
         font-size: 20px;
+    }
+    .QuienesSomos{
+        margin-right: 5px;
+        margin-left: 28px;
+    }
+}
+
+@media (max-width:370px) {
+    .VideoNosotros{
+        height: 20rem;
     }
 }

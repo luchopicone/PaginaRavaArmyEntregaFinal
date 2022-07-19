@@ -18,6 +18,10 @@
   background-color: rgba(169, 31, 187, 0.7607843137);
 }
 
+.body {
+  background: #f5f5f5;
+}
+
 .ContenedorContenedores {
   display: flex;
   justify-content: center;
@@ -190,7 +194,7 @@ footer .Copyright {
 }
 
 .BodyUbicacion {
-  background-image: url(../img/BackgroundContactanos.jpg);
+  background: linear-gradient(to right, rgb(131, 4, 242), rgb(219, 219, 219));
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -289,7 +293,7 @@ footer .Copyright {
 }
 
 .BodyNosotros {
-  background-image: url(../img/BackgroundContactanos.jpg);
+  background: linear-gradient(to right, rgb(131, 4, 242), rgb(219, 219, 219));
   background-size: 100vw;
   background-attachment: fixed;
 }
@@ -300,69 +304,196 @@ footer .Copyright {
   justify-content: center;
 }
 .BodyNosotros .ContenedorNosotros h2 {
-  margin: 20px;
-  font-size: 40px;
+  margin-bottom: 20px;
+  font-size: 75px;
   color: white;
 }
 .BodyNosotros .ContenedorNosotros p {
-  padding: 0.8rem;
-  margin: 10px;
-  font-size: 20px;
+  padding: 1.5rem;
+  margin: 20px;
+  font-size: 23px;
   color: white;
 }
 .BodyNosotros .ContenedorNosotros iframe {
-  margin: 20px 0px;
-}
-.BodyNosotros .ContenedorNosotros .QuienesSomos {
-  padding-top: 2.5rem;
+  margin: 150px 0px;
 }
 
-@media (max-width: 1100px) {
-  .ContenedorProductos {
-    width: 85%;
+.ContenedorSectionNosotros {
+  width: 90%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.bg_animate {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(131, 4, 242), rgb(219, 219, 219));
+  position: relative;
+  overflow: hidden;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.banner .banner_img {
+  animation: movimiento 2.5s linear infinite;
+}
+.banner .banner_img img {
+  width: 800px;
+  display: block;
+  padding-bottom: 250px;
+  margin-left: 450px;
+}
+.banner .banner_title h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  padding-bottom: 70px;
+  margin-left: 5px;
+}
+.banner .banner_title .BotonConocenos {
+  border-radius: 30px;
+  background: linear-gradient(to right, rgb(118, 30, 110), rgb(181, 11, 136));
+  border: 1px solid rgb(38, 38, 38);
+}
+.banner .banner_title .BotonConocenos:hover {
+  opacity: 0.9;
+}
+.banner .banner_title .BotonConocenos .Conocenos {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 17px;
+}
+
+.burbuja {
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.3;
+  position: absolute;
+  bottom: -150;
+  animation: burbujas 3s linear infinite;
+}
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+.burbuja:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+.burbuja:nth-child(8) {
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1450px) {
+  .banner_img img {
+    padding-right: 300px;
   }
 }
 @media (max-width: 1200px) {
   .ContenedorProductos {
     width: 65%;
   }
-}
-@media (max-width: 768px) {
-  .ContenedorProductos {
-    width: 55%;
+  .banner_img img {
+    margin-right: -1000px;
   }
-}
-@media (max-width: 952px) {
-  .ContenedorContenedores {
-    flex-direction: column;
+  .banner_title h2 {
+    margin-left: 30px;
   }
-  .ContenedorProductos {
-    width: 95%;
-  }
-}
-@media (max-width: 500px) {
-  .ContenedorContenedores {
-    flex-direction: column;
-  }
-  .ContenedorProductos {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .ContenedorContenedoresContactanos {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-}
-@media (max-width: 767px) {
-  Main .MainContactanos {
-    padding: 0px;
-  }
-  .ContenidoContactanos {
-    padding: 20px;
-  }
-  .ContenedorContenedoresContactanos {
-    padding: 0px;
+  .BotonConocenos {
+    margin-left: 30px;
   }
 }
 @media (max-width: 1179px) {
@@ -383,6 +514,73 @@ footer .Copyright {
     padding: 0.8rem;
   }
 }
+@media (max-width: 1100px) {
+  .ContenedorProductos {
+    width: 85%;
+  }
+}
+@media (max-width: 952px) {
+  .ContenedorContenedores {
+    flex-direction: column;
+  }
+  .ContenedorProductos {
+    width: 70%;
+  }
+  .ContenedorTextoProductoGrande {
+    margin: 50px;
+  }
+}
+@media (max-width: 920px) {
+  .ContenedorProductoGrande {
+    display: flex;
+  }
+  .RemeraProductosTarjetaGrande {
+    height: 400px;
+  }
+}
+@media (max-width: 875px) {
+  .RemeraProductosTarjetaGrande {
+    height: 370px;
+  }
+}
+@media (max-width: 800px) {
+  .RemeraProductosTarjetaGrande {
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .ContenedorContenedoresContactanos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  Main .MainContactanos {
+    padding: 0px;
+  }
+  .ContenidoContactanos {
+    padding: 20px;
+  }
+  .ContenedorContenedoresContactanos {
+    padding: 0px;
+  }
+}
+@media (max-width: 732px) {
+  .RemeraProductosTarjetaGrande {
+    display: none;
+  }
+  .ContenedorTextoProductoGrande {
+    display: none;
+  }
+  .ContenedorProductoGrande {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  .QuienesSomos {
+    margin-left: 3rem;
+  }
+}
 @media (max-width: 510px) {
   Main .MainContactanos {
     padding: 0px;
@@ -394,9 +592,12 @@ footer .Copyright {
     padding: 0px;
   }
 }
-@media (max-width: 370px) {
-  .VideoNosotros {
-    height: 20rem;
+@media (max-width: 500px) {
+  .ContenedorContenedores {
+    flex-direction: column;
+  }
+  .ContenedorProductos {
+    width: 100%;
   }
 }
 @media (max-width: 472px) {
@@ -406,4 +607,84 @@ footer .Copyright {
   .MenuItem {
     font-size: 20px;
   }
+  .QuienesSomos {
+    margin-right: 5px;
+    margin-left: 28px;
+  }
+}
+@media (max-width: 370px) {
+  .VideoNosotros {
+    height: 20rem;
+  }
+}
+.BodyProductos {
+  background: #f5f5f5;
+}
+
+.ContenedorProductoGrande {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  justify-content: space-between;
+}
+.ContenedorProductoGrande .RemeraProductosTarjetaGrande {
+  width: auto;
+  padding: 0;
+  margin-right: 3.5rem;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 90px;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande h2 {
+  font-size: 54px;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande h3 {
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande p {
+  font-size: 16px;
+  color: #b7b7b7;
+  font-weight: 100;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande h4 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande .BotonCompraYaProductos {
+  width: 165px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #ff36c6, #f48210);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande .BotonCompraYaProductos img {
+  width: 30px;
+  display: none;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande .BotonCompraYaProductos:hover {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande .BotonCompraYaProductos:hover img {
+  display: block;
+}
+.ContenedorProductoGrande .ContenedorTextoProductoGrande .BotonCompraYaProductos::after {
+  content: "";
+  width: 10px;
+  height: 63%;
+  background: linear-gradient(to right, #ff36c6, #f48210);
+  position: absolute;
+  left: -40px;
+  top: 8px;
 }/*# sourceMappingURL=style.css.map */
