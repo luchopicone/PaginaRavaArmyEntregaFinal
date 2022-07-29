@@ -207,6 +207,7 @@ footer .Copyright {
 }
 .BodyUbicacion .MainUbicacion .TextoAbajoMapa {
   color: white;
+  padding-left: 20px;
 }
 
 .BodyContactanos {
