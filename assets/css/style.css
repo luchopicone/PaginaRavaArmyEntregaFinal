@@ -203,6 +203,7 @@ footer .Copyright {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding-top: 1rem;
   padding-bottom: 2.5rem;
+  padding: 0px 20px;
 }
 .BodyUbicacion .MainUbicacion .TextoAbajoMapa {
   color: white;
@@ -287,6 +288,9 @@ footer .Copyright {
 .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto h4, .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul, .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto p {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+.BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul {
+  padding-right: 32px;
 }
 .BodyContactanos .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul li {
   padding: 0.3rem 0rem;
@@ -603,6 +607,7 @@ footer .Copyright {
 @media (max-width: 472px) {
   .FooterMenuContainer {
     flex-direction: column;
+    padding-right: 32px;
   }
   .MenuItem {
     font-size: 20px;
@@ -615,6 +620,9 @@ footer .Copyright {
 @media (max-width: 370px) {
   .VideoNosotros {
     height: 20rem;
+  }
+  .InformacionContacto ul li {
+    font-size: 0.8rem;
   }
 }
 .BodyProductos {
